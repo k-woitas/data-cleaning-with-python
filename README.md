@@ -1,9 +1,10 @@
 # Data Cleaning with Python
 
 Workshop prepared for University of Bern's [Transferable Skills Program for (Post)Docs](https://www.unibe.ch/research/promotion_of_early_career_researchers/ts/ts/index_eng.html). 
-Covering data quality concepts including data validity and discussion of insufficient data. Working through a cleaning process of example tabular data using various methods of analysing, visualizing, correcting, transforming, imputing data.
 
-Contents
+Covering data quality concepts including data validity and discussion of insufficient data. Working through a cleaning process of example tabular data using various methods of analysing (EDA), visualizing, correcting, transforming, imputing data.
+
+*Contents*
 
     1  Prerequisites
     2  Data quality aspects
