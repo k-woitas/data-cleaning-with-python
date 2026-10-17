@@ -1,10 +1,40 @@
 # Data Cleaning with Python
 
+## Inhaltsverzeichnis
+
+- [Files](#files)
+- [Setup](#setup)
+- [Contents](#contents)
+
 Workshop prepared for University of Bern's [Transferable Skills Program for (Post)Docs](https://www.unibe.ch/research/promotion_of_early_career_researchers/ts/ts/index_eng.html). 
 
 Covering data quality concepts including data validity and discussion of insufficient data. Working through a cleaning process of example tabular data using various methods of analysing (EDA), visualizing, correcting, transforming, imputing data.
 
-*Contents*
+## Files
+
+* `data_cleaning.ipynb` – the workshop notebook
+* `data_cleaning.html` – the executed notebook as HTML, to read without Python
+* `bank.csv` – example dataset (abridged and adjusted version of the [Bank Marketing Data Set](https://archive.ics.uci.edu/dataset/222/bank+marketing))
+* `environment.yml` / `requirements.txt` – the packages needed
+
+## Setup
+
+Tested with Python 3.12, pandas 2.3, scikit-learn 1.9, seaborn 0.13 and fg-data-profiling 4.20 (October 2026).
+
+With conda:
+
+    conda env create -f environment.yml
+    conda activate cleaning-env
+    jupyter lab
+
+Or with pip (in a virtual environment):
+
+    pip install -r requirements.txt
+    jupyter lab
+
+Note: [fg-data-profiling](https://github.com/Data-Centric-AI-Community/fg-data-profiling) is the current name of the former *pandas-profiling* / *ydata-profiling* package. It does not support pandas 3 yet, therefore pandas is kept at version 2.3.
+
+## Contents
 
     1  Prerequisites
     2  Data quality aspects
@@ -30,7 +60,7 @@ Covering data quality concepts including data validity and discussion of insuffi
             5.3.2  Numerics
             5.3.3  Bi-/Trivariate
             5.3.4  Heat maps
-        5.4  Data inspection with pandas-profiling
+        5.4  Data inspection with data-profiling
     6  Explore cleaning
         6.1  Dealing with insufficient data
         6.2  Removing data
@@ -47,4 +77,3 @@ Covering data quality concepts including data validity and discussion of insuffi
         6.6  Standardize
     7  Define & verifying pipeline
     8  Implementing & reporting
-

@@ -131,3 +131,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Notebook output files
+bank_preprocessed.csv
+bank_profile.html
